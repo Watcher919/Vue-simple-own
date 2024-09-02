@@ -6240,6 +6240,7 @@
         console.log({ Ctor: Ctor, propsData: propsData, listeners: listeners, tag: tag, children: children })
         console.log(asyncFactory)
 
+        // 创建虚拟dom
         var vnode = new VNode(
             ("vue-component-" + (Ctor.cid) + (name ? ("-" + name) : '')),
             data,  // 标签 属性数据
